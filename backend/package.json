@@ -1,0 +1,32 @@
+{
+  "name": "radet-report-generator",
+  "version": "1.0.0",
+  "description": "RADET Report Generator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "pkg . --targets node18-win-x64 --output dist/radet-generator.exe --compress GZip"
+  },
+  "bin": "server.js",
+  "pkg": {
+    "scripts": [
+      "server.js"
+    ],
+    "assets": [
+      "frontend/**/*",
+      "query.sql",
+      "config.default.json"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.3",
+    "xlsx": "^0.18.5",
+    "moment": "^2.29.4"
+  }
+}

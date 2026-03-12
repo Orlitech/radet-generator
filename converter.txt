@@ -1,0 +1,1 @@
+pyinstaller --onefile --add-data "frontend;frontend" --add-data "query.sql;." --add-data "config.json;." app.py
