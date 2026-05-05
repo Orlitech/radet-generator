@@ -8,7 +8,7 @@ A modern, full-stack web application for generating RADET reports from PostgreSQ
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 The dashboard provides an interface for generating RADET reports by selecting a date range and exporting the results.
 
@@ -23,7 +23,7 @@ Features include:
 
 ### Database Configuration
 
-![Configuration](screenshots/configuration.png)
+![Configuration](configuration.png)
 
 The configuration interface allows administrators to connect the application to a PostgreSQL database.
 
